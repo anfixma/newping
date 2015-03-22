@@ -1,0 +1,16 @@
+[
+    {
+        "region": {
+            "code": "us",
+            "name": "United States"
+        },
+        "ip_list": ["199.7.83.42", "199.7.83.42"]
+    },
+    {
+        "region": {
+            "code": "eu",
+            "name": "Europe Union"
+        },
+        "ip_list": ["192.58.128.30", "193.0.14.129"]
+    }
+]

@@ -1,0 +1,7 @@
+pyping==0.0.4
+simplejson>=3.6.x
+lxml
+pygal
+tinycss
+cssselect
+CairoSVG

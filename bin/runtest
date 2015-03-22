@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ "$(id -u)" != "0" ]; then
+   echo "ICMP messages can only be send from processes running as root" 1>&2
+   exit 1
+fi
+
+CWD="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
+PYTHONPATH="${PYTHONPATH}:${CWD}"/../
+export PYTHONPATH
+
+. ${CWD}/../.env/bin/activate && python ${CWD}/runtest.py
